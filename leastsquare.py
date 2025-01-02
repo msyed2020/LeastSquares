@@ -18,4 +18,13 @@ def leastSquare(n: int, x: list, y: list):
     
     # Var calculation
     for i in range(n):
-        
+        eq = (x[i] - x_bar) * (x[i] - x_bar)
+        var += eq
+    
+    a = cov / var
+
+    b = y_bar - (a * x_bar)
+
+    # SSE Calculation
+
+    for i in range()
