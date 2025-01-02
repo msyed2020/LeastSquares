@@ -26,5 +26,10 @@ def leastSquare(n: int, x: list, y: list):
     b = y_bar - (a * x_bar)
 
     # SSE Calculation
+    sse = 0
+    for i in range(n):
+        eq = (y[i] - (a * x[i] + b)) * (y[i] - (a * x[i] + b))
+        sse += eq
+    return "a: " + str(a) + ", b: " + str(b) + ", SSE: " + str(sse)
 
-    for i in range()
+print(leastSquare(3, [1,2,3], [2,4,6]))
